@@ -41,9 +41,17 @@ body{
 
 .jumbotron-headline{
     margin: auto;
-    height: 700px;
-    background: linear-gradient(90deg, rgb(196, 128, 2), transparent 90%),linear-gradient(280deg, orange, transparent 90%),url(../images/background-image.png) no-repeat center bottom;
-    background-size: cover;
+    height: auto;
+    /* background: linear-gradient(90deg, rgb(196, 128, 2), transparent 90%),linear-gradient(280deg, orange, transparent 90%),url(../images/background-image.png) no-repeat center bottom;
+    background-size: cover; */
+}
+
+#spain{
+    position:fixed;
+    z-index: -1;
+    width: auto;
+    height: 100%;
+    margin-left: -40px;
 }
 
 /* =========================
