@@ -246,7 +246,7 @@ body{
     height: auto;
     background: #5c5054;
     font-size: 18px;
-    font-family: 'McLaren', 'cursive';
+    font-family: 'Poppins', 'sans-serif';
     padding: 20px;
     display:flex;
     display: -webkit-flex;
@@ -301,10 +301,11 @@ h1{
     font-size: .75em;
     line-height: 2.5em;
     padding: 10px;
-    color: #dadada;
+    color: white;
     text-align: left;
     margin: 0;
     display: block;
+    font-weight: bolder;
 }
 span{
     margin: 0;
