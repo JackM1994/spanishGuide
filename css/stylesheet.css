@@ -13,6 +13,10 @@ body{
     -webkit-font-smoothing: antialiased;
     font-size: 1rem;
     color: #bdbdd5;
+    position: relative;
+
+  
+  
   
 }
 .jumbotron-headline h1,
@@ -49,7 +53,11 @@ body{
 .jumbotron-headline{
   height: auto;
   margin: 0 auto;
+  position: relative;
      
+}
+#intro{
+    z-index: 1000;
 }
 
 .content-width {
@@ -195,17 +203,7 @@ body{
     About Section
 ===========================*/
 
-#greetings{
-    height: 400px;
-    background: #fff;
-    margin: auto;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: block;
-    border-bottom: #000 solid 3px;
 
-}
 
 /* =========================
     Colour Section
@@ -214,8 +212,8 @@ body{
     background: #fff;
     margin: auto;
     text-align: center;
-    margin-top: 100px;
-   
+    
+   z-index: 1000;
     border-bottom: orange solid 3px;
     height: auto;
 }
@@ -317,7 +315,7 @@ body{
     background: linear-gradient(20deg, firebrick, transparent 90%), 
                 linear-gradient(220deg, rgb(129, 28, 28), transparent 90%),
                  url(../images/digits.png) no-repeat;
-    z-index: 2;
+    z-index: 1000;
     background-size: cover;
     margin-bottom: 100px;
     height: auto;
@@ -345,7 +343,9 @@ body{
 .quiz-title{
     margin-top: 250px;
     text-align: center;
+
 }
+
 #dm{
     margin: auto;
     height: auto;
@@ -355,6 +355,8 @@ body{
                 url(../images/summer.jpg);
     background-size: cover;
     margin-bottom: 100px;
+    z-index: 1000;
+   
 
 }
 .days,
@@ -386,6 +388,7 @@ body{
     margin-bottom: 50px;
 
 }
+
 #quiz{
     margin: auto;
     height: auto;
@@ -397,6 +400,8 @@ body{
     display: -webkit-flex;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: 1000;
+ 
 }
 .quiz{
     cursor: pointer;
@@ -511,3 +516,78 @@ h1 span i{
 .name .quiz_answer{
     border-bottom-color: green;
 }
+
+/* =========================
+    Tab Design Section
+===========================*/
+.jumbotron-headline,
+.colores,
+.num,
+.days-months,
+.quiz-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2000px;
+    transition: transform 0.4s ease;
+    transform: translateX(-100%);
+}
+.jumbotron-headline:nth-of-type(1) {
+    background-color: #ff7e5f;
+}
+.colores:nth-of-type(1) {
+    background-color: #fab57a;
+}
+.num:nth-of-type(1) {
+    background-color: #edf798;
+}
+.days-months:nth-of-type(1) {
+    background-color: #80d6ff;
+}
+.quiz-card:nth-of-type(1){
+    background-color: rgb(107, 190, 107);
+}
+input[type="radio"] {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 15%;
+    outline: 10px solid;
+    outline-offset: -10px;
+    margin: 0;
+    z-index: 1001;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 40px;
+    color: #fff;
+}
+input[type="radio"]:nth-of-type(1) {
+    outline-color:#ff7e5f;
+    top: 0%;
+    background: #ff7e5f;
+}
+input[type="radio"]:nth-of-type(2) {
+    outline-color: #fab57a;
+    top: 20%;
+    background: #fab57a;
+}
+input[type="radio"]:nth-of-type(3) {
+    outline-color: #edf798;
+    top: 40%;
+}
+input[type="radio"]:nth-of-type(4) {
+    outline-color: #80d6ff;
+    top: 60%;
+}
+input[type="radio"]:nth-of-type(5) {
+    outline-color: rgb(107, 190, 107);
+    top: 80%;
+}
+input[type="radio"]:checked + div {
+    transform: translateX(0%);
+    transition: transform 0.4s ease 0.4s;
+}
+
+
+
