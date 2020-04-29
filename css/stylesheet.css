@@ -4,24 +4,24 @@
 a{
     cursor: pointer;
 }
-body{
+html,body{
     width: 100%;
-    height: 100vh;
-    overflow: hidden; 
-    background:  #ff7e5f;     
+    height: auto;
+    margin: auto 0;
+    background: #fff;
     font-family: 'Fira Mono', monospace;
     -webkit-font-smoothing: antialiased;
     font-size: 1rem;
-    color: #bdbdd5;
+    color: #fff;
     position: relative;
-
-  
-  
+    overflow-x: hidden !important;
   
 }
+
+
 .jumbotron-headline h1,
 .lead{
-    margin-top: 240px;
+    /* margin-top: 240px; */
     margin-bottom: 20px;
     text-align: center;
     text-shadow: 0 2px 2px #222;
@@ -53,16 +53,20 @@ body{
 .jumbotron-headline{
   height: auto;
   margin: 0 auto;
-  position: relative;
      
 }
 #intro{
     z-index: 1000;
+   
+}
+.sidenote{
+  color: #fff;
+  margin-top: 20px;
 }
 
 .content-width {
     width: 86%;
-    height: 100vh;
+    height: auto;
     margin: 0 auto;
   }
 .slideshow {
@@ -212,10 +216,11 @@ body{
     background: #fff;
     margin: auto;
     text-align: center;
-    
    z-index: 1000;
     border-bottom: orange solid 3px;
-    height: auto;
+    height: 1500px;
+    overflow-y: scroll;
+    
 }
 .colours{
     font-size: 50px;
@@ -529,23 +534,24 @@ h1 span i{
     top: 0;
     left: 0;
     width: 100%;
-    height: 2000px;
+    height: auto;
     transition: transform 0.4s ease;
     transform: translateX(-100%);
+   
 }
 .jumbotron-headline:nth-of-type(1) {
     background-color: #ff7e5f;
 }
-.colores:nth-of-type(1) {
+.colores:nth-of-type(2) {
     background-color: #fab57a;
 }
-.num:nth-of-type(1) {
+.num:nth-of-type(3) {
     background-color: #edf798;
 }
-.days-months:nth-of-type(1) {
+.days-months:nth-of-type(4) {
     background-color: #80d6ff;
 }
-.quiz-card:nth-of-type(1){
+.quiz-card:nth-of-type(5){
     background-color: rgb(107, 190, 107);
 }
 input[type="radio"] {
@@ -584,10 +590,14 @@ input[type="radio"]:nth-of-type(5) {
     outline-color: rgb(107, 190, 107);
     top: 80%;
 }
-input[type="radio"]:checked + div {
+input[type="radio"]:checked + div{
     transform: translateX(0%);
     transition: transform 0.4s ease 0.4s;
 }
 
 
-
+/* .small-nav{
+    font-size: 20px;
+    color: white;
+   
+} */
