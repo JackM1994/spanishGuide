@@ -6,7 +6,7 @@ a{
 }
 html,body{
     width: 100%;
-    height: auto;
+    height: 100vh;
     margin: auto 0;
     background: #ff7e5f;
     font-family: 'Fira Mono', monospace;
@@ -14,8 +14,9 @@ html,body{
     font-size: 1rem;
     color: #ff7e5f;
     position: relative;
-    overflow-x: hidden !important;
+    
     z-index: -1;
+    overflow-x: hidden !important;
   
 }
 
@@ -551,6 +552,7 @@ html,body{
     Quiz/Study  Section
 ===========================*/
 .how-to-use,
+.quiz-title,
 .how-to-use1{
     font-size: 18px;
     color: #fff;
@@ -559,7 +561,14 @@ html,body{
     margin-bottom: 50px;
     font-weight: bolder;
     margin-left: 20px;
+   
 
+}
+
+.quiz-title{
+    font-family: 'Reem Kufi','sans-serif';
+    font-size: 2em;
+  
 }
 .how-to-use1{
     color: rgb(107, 190, 107);
@@ -567,6 +576,7 @@ html,body{
     margin-left: -100%;
     margin-bottom: 100px;
 }
+
 
 #quiz{
     margin: auto;
@@ -583,6 +593,12 @@ html,body{
   
  
 }
+.flex-class{
+    display:flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .quiz{
     cursor: pointer;
     position: relative;
@@ -593,6 +609,7 @@ html,body{
     margin: 40px;
     height: 400px;
     perspective: 600px;
+    align-items: center;
 }
 .quiz-question,
 .quiz_answer{

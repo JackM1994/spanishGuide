@@ -125,7 +125,7 @@
       },
 
       {
-        question: "What is does 2+2 make?",
+        question: "What does 2+2 make?",
         answers: {
           a: "cuat",
           b: "cuatra",
@@ -169,7 +169,7 @@
       },
 
       {
-        question: "What is Spanish word for 10?",
+        question: "What is Spanish word for Ten?",
         answers: {
           a: "diez",
           b: "decima",
